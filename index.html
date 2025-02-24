@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jeu éducatif - Sensibilisation à l'énergie</title>
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Jeu éducatif : Sensibilisation à l'énergie</h1>
     </header>
-
-    <nav>
-        <a href="#presentation">Présentation</a>
-        <a href="les regles.html">Règles</a>
-        <a href="#jeu">Commencer le jeu ?</a>
-    </nav>
+    
+    
 
     <main>
+        <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">x</a>
+        <ul>
+          <li><a href="index.html">Acceuil</a></li>
+          <li><a href="les regles.html">Les régles du jeu</a></li>
+          <li><a href="a propos.html">A propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+
         <section id="presentation">
             <h2>Bienvenue !</h2>
             <p>Apprends en t'amusant comment économiser de l'énergie et protéger notre planète !</p>

@@ -4,22 +4,37 @@
     <meta charset="UTF-8" />
     <title>a propos</title>
     <link href="style.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Jeu éducatif : A propos</h1>
     </header>
 
-    <nav>
-        <a href="index.html">Page principale</a>
-        <a href="les regles.html">Règles</a>
-    </nav>
 
     <main>
-        <h2>Nous sommes</h2>
-        <p class="NOU">Nous sommes 4 élèves de Terminale STI2D au Lycée Alexis de Tocqueville (Manche 50) .<br>
-        Aujourd'hui nous vous présentons notre projet de fin d'année consistant en un jeu éducatif et captivant pour des élèves de primaire visant à sensibiliser sur les pertes énergétiques dans le foyer familial.<br>
-        Au travers de cette activitée les élèves aprendront à corriger leur erreur dans le quotidien et de réduire leur pertes énergétique tout au long de la journée du matin au soir, été comme hiver.<br>
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="close">x</a>
+            <ul>
+              <li><a href="index.html">Acceuil</a></li>
+              <li><a href="les regles.html">Les régles du jeu</a></li>
+              <li><a href="a propos.html">A propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          
+          <a href="#" id="openBtn">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </a>
+
+        <h2>🌍 Qui sommes-nous ? 🌍</h2>
+        <p class="NOU">Nous sommes un groupe de 4 élèves en Terminale STI2D au lycée Alexis de Tocqueville (Manche 50). Ce jeu est notre projet de fin d’année, et nous avons choisi ce sujet car il est en lien avec l’un des thèmes importants de notre formation : le développement durable.<br>
+            À travers ce projet, nous voulons sensibiliser les plus jeunes à l’importance de l’économie d’énergie et à la réduction du gaspillage énergétique. Nous pensons qu’en comprenant mieux comment fonctionne la consommation électrique, chacun peut adopter de bons réflexes pour protéger notre planète.
         </p>
 
         <h2>Les objectifs</h2>
@@ -36,6 +51,7 @@
 
     <footer>
         <p>&copy; 2025 - Projet STI2D Lycée Alexis de Tocqueville</p>
+        <a href="a propos.html">A propos</a>
     </footer>
 
 </body>
