@@ -179,3 +179,16 @@ li {
   main img {
     width: 55em;
   }
+
+  .sidenav .barre {
+    position: relative;
+    left: 45px;
+    display: block;
+    width:100px ;
+    height: 3px;
+    background-color: #333;
+  }
+
+  .sidenav .select {
+    color: #333;
+  }
