@@ -21,7 +21,7 @@ header h1 {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     background-color: #FFAA00;
     padding: 10px 0;
 }
