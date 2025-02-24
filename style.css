@@ -54,7 +54,10 @@ main p {
     line-height: 1.6;
 }
 
-.btn-primary {
+.btn-hiver {
+    position: relative;
+    right:20em ;
+    bottom: 30em;
     background-color: #007BFF;
     color: white;
     padding: 10px 20px;
@@ -65,7 +68,25 @@ main p {
     transition: background-color 0.3s;
 }
 
-.btn-primary:hover {
+.btn-hiver:hover {
+    background-color: #0056b3;
+}
+
+.btn-ete {
+    position: relative;
+    left:20em ;
+    bottom: 30em;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-ete:hover {
     background-color: #0056b3;
 }
 
@@ -74,7 +95,7 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position:-ms-page;
+    position:relative;
     bottom: 0;
     width: 100%;
 }
@@ -153,4 +174,8 @@ li {
     height: 5px;
     background-color: black;
     margin: 6px 0;
+  }
+
+  main img {
+    width: 58em;
   }
