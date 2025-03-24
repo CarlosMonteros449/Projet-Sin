@@ -1,22 +1,23 @@
 body {
-    font-family: 'Comic Sans MS', Arial, sans-serif;
-    background: linear-gradient(to bottom, #85d8ce, #a7e9af);
-    color: #333;
+    font-family: 'Nunito', 'Comic Sans MS', Arial, sans-serif;
+    background: linear-gradient(135deg, #FFE5E5, #E5F9FF);
+    color: #444;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #FFD700;
-    padding: 20px;
+    background: linear-gradient(45deg, #FF9A9E, #FAD0C4);
+    padding: 25px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0 , 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    color: #333;
+    font-size: 2.8em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav {
@@ -54,40 +55,21 @@ main p {
     line-height: 1.6;
 }
 
-.btn-hiver {
-    position: relative;
-    right:20em ;
-    bottom: 30em;
-    background-color: #007BFF;
+.btn-hiver, .btn-ete {
+    background: linear-gradient(45deg, #4FACFE, #00F2FE);
     color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
+    padding: 15px 30px;
+    font-size: 1.3em;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-.btn-hiver:hover {
-    background-color: #0056b3;
-}
-
-.btn-ete {
-    position: relative;
-    left:20em ;
-    bottom: 30em;
-    background-color: #007BFF;
-    color: white;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-ete:hover {
-    background-color: #0056b3;
+.btn-hiver:hover, .btn-ete:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 footer {
@@ -129,66 +111,75 @@ li {
     z-index: 1;
     top: 0;
     left: -250px;
-    background-color: #e8e8e8;
+    background: linear-gradient(135deg, #fff, #f8f9fa);
     padding-top: 60px;
     transition: left 0.5s ease;
-  }
-  
-  /* Sidenav menu links */
-  .sidenav a {
+    border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Sidenav menu links */
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
     color: #0a0a0a;
-  }
-  
-  .sidenav ul {
+}
+
+.sidenav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
-  
-  /* Active class */
-  .sidenav.active {
+}
+
+/* Active class */
+.sidenav.active {
     left: 0;
-  }
-  
-  /* Close btn */
-  .sidenav .close {
+}
+
+/* Close btn */
+.sidenav .close {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
-  }
-  
-  /* Icône burger */
-  .burger-icon span {
+}
+
+/* Icône burger */
+.burger-icon span {
     display: block;
     width: 35px;
     height: 5px;
     background-color: black;
     margin: 6px 0;
-  }
+}
 
-  main img {
-    width: 55em;
-  }
+main img {
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    max-width: 90%;
+    height: auto;
+}
 
-  .sidenav .barre {
+main img:hover {
+    transform: scale(1.02);
+}
+
+.sidenav .barre {
     position: relative;
     left: 45px;
     display: block;
     width:100px ;
     height: 3px;
     background-color: #333;
-  }
+}
 
-  .sidenav .select {
+.sidenav .select {
     color: #333;
-  }
+}
