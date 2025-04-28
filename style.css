@@ -23,7 +23,7 @@ header h1 {
 nav {
     display: flex;
     justify-content: left;
-    background-color: #FFAA00;
+    background: linear-gradient(200deg, #F08080, #CD5C5C);
     padding: 10px 0;
 }
 
@@ -70,6 +70,11 @@ main p {
 .btn-hiver:hover, .btn-ete:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(45deg, #02c8d6, #c0dee7);
+}
+
+.btn-ete:hover {
+    background: linear-gradient(45deg, #df1515, #eeea19);
 }
 
 footer {
