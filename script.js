@@ -14,3 +14,7 @@ function openNav() {
 function closeNav() {
   sidenav.classList.remove("active");
 }
+
+document.querySelector('.btn-hiver').onclick = () => {
+  window.location.href = 'Hiver/Jeu_hiver.html';
+};
