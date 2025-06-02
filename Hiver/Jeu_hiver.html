@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Économies d'Énergie</title>
+    <link rel="stylesheet" href="style.css">
+    <audio id="son_tv" src="assets/sounds/tv_sound.mp3"></audio>
+    <audio id="son_frigo" src="assets/sounds/fridge_sound.mp3"></audio>
+    <audio id="son_lampe" src="assets/sounds/lamp_sound.mp3"></audio>
 
+</head>
+<body>
+
+    <div id="fenetre-choix" class="fenetre-choix" style="display: none;">
+        <div class="fenetre-contenu">
+            <div class="fenetre-header">
+                <h2 class="titre-quete">Interaction écologique</h2>
+            </div>
+            <p id="texte-choix" class="texte-message"></p>
+            <div class="choix-container">
+                <button id="choix-1" class="choix-bouton">1. Option 1</button>
+                <button id="choix-2" class="choix-bouton">2. Option 2</button>
+                <button id="choix-3" class="choix-bouton">3. Option 3</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="conteneur-jeu">
+        <header>
+            <h1>Jeu d'Économies d'Énergie</h1>
+            <a href="../index.html" aria-label="Retour à l'accueil">
+              <button  class="btn-accueil">Retour Accueil</button>
+            </a>
+        </header>
+
+        <div class="conteneur-quete">
+            <p id="quete">Quête actuelle : Approche-toi de la TV pour l’éteindre.</p>
+        </div>
+
+        <div class="plateau-jeu">
+            <div class="toit"></div>
+            <div class="cuisine" id="cuisine">Cuisine</div>
+            <div class="salon" id="salon">Salon</div>
+            <div class="salle-de-bain" id="salle-de-bain">Salle de bain</div>
+            <div class="chambre" id="chambre">Chambre</div>
+
+            <div class="joueur" id="player"></div>
+
+            <div id="frigo" class="frigo" style="left: 3.7%; bottom: 54%;"> Frigo </div>
+            <div id="frigo_ouvert" class="frigo_ouvert" style="left: 3.7%; bottom: 54%;"> frigo_ouvert </div>
+            <div id="lumiere_cuisine" class="lumiere_cuisine" style="left: 10%; bottom: 54%;">Lumière Cuisine</div>
+            <div id="tv" class="télévision" style="left: 87%; bottom: 68.5%;">TV</div>
+            <div id="console" class="console" style="left: 75%; bottom: 68%;">Console</div>
+            <div id="rideaux_salon" class="rideaux_salon" style="left: 90%; bottom: 68%;">Rideaux Salon</div>
+            <div id="chauffage_salon" class="chauffage_salon" style="left: 80%; bottom: 68%;">Chauffage Salon</div>
+            <div id="chargeur" class="chargeur" style="left: 50%; bottom: 10%;">Chargeur</div>
+            <div id="lumiere_chambre" class="lumiere_chambre" style="left: 20%; bottom: 5%;">Lumière Chambre</div>
+            <div id="rideaux_chambre" class="rideaux_chambre" style="left: 25%; bottom: 5%;">Rideaux Chambre</div>
+            <div id="veilleuse" class="veilleuse" style="left: 30%; bottom: 5%;">Veilleuse</div>
+            <div id="pull" class="pull" style="left: 35%; bottom: 5%;">Pull</div>
+            <div id="lumiere_sdb" class="lumiere_sdb" style="left: 60%; bottom: 5%;">Lumière Salle de Bain</div>
+            <div id="fenetre" class="fenetre" style="left: 15%; bottom: 68%;">Fenêtre</div>
+            <div id="lumiere_salon" class="lumiere_salon" style="left: 40%; bottom: 50%;">Lumière Salon</div>
+
+
+            <div class="escalier" id="staircase"></div>
+        </div>
+
+        <div class="conteneur-score">
+            <p>Consommation d'énergie : <span id="score">0</span> Wh</p>
+        </div>
+
+        <footer>
+            <p>Bonne chance et économise de l'énergie !</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <div class="vent"></div>
+
+</body>
+</html>
